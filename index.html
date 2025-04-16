@@ -4,17 +4,114 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MI CURRICULUM VITAE</title>
+  <style type="text/css">
+    body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #aaa111, #d9d9d9); 
+    color: #333; 
+  margin: 25px;
+  padding: 0;
+  
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: flex-start;
+}
+    h1{
+        text-align: center;
+        background: #EFE123;
+        color: #AAA123;
+    }
+       h1:hover{
+      transform: scale(1.05);
+      transition: transform 0.3s;
+      background: #11FF33;
+      display: block;
+      transform-origin: center center;
+    
+    }
+    #foto{
+        margin: auto;
+        text-align: center;
+        border: dashed 5px #333DCD;
+        width: 135px;
+        padding: 5px;
+        background: #BA4532;
+    }
+    #datos{
+        letter-spacing: 4px;
+        font-size: 20px;
+        margin:auto;
+        width: 500px;
+        text-align: center;
+        background-image:url(fondo.gif) ;
+    }
+    h2 {
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border-radius: 12px;
+
+ 
+  background-color: #eae8f4;
+  color: #333; 
+  font-weight: bold;
+
+  transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+h2::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 1em;
+  bottom: 0.5em;
+  background-color: #e52e71;
+  transition: width 0.3s ease;
+}
+
+/* Hover con degradado y efectos */
+h2:hover {
+  background: #fff;
+  color: #e52e71; /* O usa un gradiente si quieres probar más fancy */
+  text-shadow: 0 0 10px rgba(229, 46, 113, 0.5);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2:hover::after {
+  width: calc(100% - 2em);
+}
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+/* Párrafos dentro de las secciones */
+p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+  </style>
 </head>
-<body background="blue">
-<center>
+<body>
+
 <h1> CRISTHIAN PAUL RIVADENEIRA BURGOS </h1>
-<img src="cris.jpg"> </center>
+<div id="foto">
+<img src="cris.jpg"></div> 
+<div id="datos">
 <p><strong>Email:</strong> crishriva@gmail.com</p>
 <p><strong>Teléfono:</strong> 0981564840</p>
 <p><strong>Dirección:</strong> Guayaquil, Ecuador.</p>
-
+</div>
 <h2>Perfil Profesional</h2>
-<p>Soy docente informático con 18 años de experiencia.</p>
+<p>Soy docente con 18 años de experiencia.</p>
 
 <h2>Experiencia Laboral</h2>
 <p><strong>UNIDAD EDUCATIVA FISCAL GUAYAQUIL</strong> - DOCENTE (2012 - actual)</p>
@@ -31,7 +128,7 @@
 <ul>
   <li>Trabajo en Equipo</li>
   <li>Liderazgo</li>
-  <li>Programación en Java, Python</li>
+  <li>Responsabilidad</li>
 </ul>
 
 <h2>Idiomas</h2>
@@ -39,6 +136,17 @@
   <li>Español - Nativo</li>
   <li>Inglés - Intermedio</li>
 </ul>
+<p>
+  Se usó los estilos CSS para darle un formato agradable y vistoso, utilizando 10 selectores CSS.
+  El primer selector es para el body de la página donde se define un fondo degradado.
+  El segundo y tercer selector es para el encanbezado h1, en donde se ha hecho un efecto de agrandamiento usando la pseudo clase hover y las propiedades respectivas para el efecto: transform y transition.
+  El cuarto selector define bordes y colores para la imagen
+  El quinto selector aplica un fondo con imagen degradado al texto y asi mismo separación en el texto.
+  Los siguientes cuatro selectores se crearon para darle un efecto llamativo a los encabezados h2, ahi vemos el efecto de animación en el subrayado.
+  Y finalmente, los dos ultimos selectores permitejorar la presentación de los párrafos p y las listas desordenadas ul.
 
+
+
+</p>
 </body>
 </html>
